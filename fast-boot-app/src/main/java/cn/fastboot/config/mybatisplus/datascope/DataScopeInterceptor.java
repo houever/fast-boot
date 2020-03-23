@@ -1,14 +1,12 @@
 package cn.fastboot.config.mybatisplus.datascope;
 
 import cn.fastboot.config.mybatisplus.enums.DataScopeTypeEnum;
-import cn.fastboot.config.mybatisplus.tenant.UserUtil;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.db.Db;
 import cn.hutool.db.Entity;
 import com.baomidou.mybatisplus.core.toolkit.PluginUtils;
 import com.baomidou.mybatisplus.extension.handlers.AbstractSqlParserHandler;
-import com.sun.xml.internal.ws.api.model.CheckedException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.executor.statement.StatementHandler;
