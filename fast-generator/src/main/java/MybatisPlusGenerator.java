@@ -91,8 +91,8 @@ public class MybatisPlusGenerator {
         strategy.setRestControllerStyle(true);//生成restful的controller
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setDbColumnUnderline(true);
-        strategy.setSuperEntityClass("cn.fast.web.base.BaseEntity");
-        strategy.setSuperControllerClass("cn.fast.web.base.BaseController");
+        strategy.setSuperEntityClass("cn.fastboot.base.BaseEntity");
+        strategy.setSuperControllerClass("cn.fastboot.base.BaseController");
         //父类中的字段
         strategy.setSuperEntityColumns(new String[]{"id", "create_time", "update_time", "create_by", "update_by", "is_del"});
         strategy.setControllerMappingHyphenStyle(true);

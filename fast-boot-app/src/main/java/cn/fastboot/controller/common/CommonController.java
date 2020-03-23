@@ -1,4 +1,4 @@
-package cn.fastboot.controller;
+package cn.fastboot.controller.common;
 
 import cn.fastboot.base.result.Result;
 import io.swagger.annotations.Api;

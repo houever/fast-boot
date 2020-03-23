@@ -1,5 +1,5 @@
 package ${package.Mapper};
-import cn.fast.web.base.BaseMpMapper;
+import cn.fastboot.base.BaseMpMapper;
 import ${package.Entity}.${entity};
 /**
  * <p>

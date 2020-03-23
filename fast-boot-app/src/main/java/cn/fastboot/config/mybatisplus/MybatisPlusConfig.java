@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.core.parser.ISqlParser;
 import com.baomidou.mybatisplus.extension.plugins.IllegalSQLInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.tenant.TenantSqlParser;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,10 +20,16 @@ import java.util.List;
  * @author houqijun
  * @date 2017/10/29
  */
+@MapperScan(value = "cn.fastboot.mapper")
 @Configuration
 public class MybatisPlusConfig {
 
 	/**
+	 * @Description: TODO
+	 * @Param: 检查SQL是否合规
+	 * @Return: 
+	 * @Author: houqj
+	 * @Date: 2020/3/23 10:56
 	 * 非法sql拦截
 	 * https://github.com/baomidou/mybatis-plus/blob/3.0/mybatis-plus-extension/src/main/java/com/baomidou/mybatisplus/extension/plugins/IllegalSQLInterceptor.java
 	 */

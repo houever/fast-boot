@@ -1,5 +1,5 @@
 package ${package.Service};
-import cn.fast.web.base.BaseService;
+import cn.fastboot.base.BaseService;
 import ${package.Entity}.${entity};
 /**
  * <p>
