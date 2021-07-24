@@ -18,6 +18,8 @@ import java.util.stream.Stream;
 public class MysqlInjector extends AbstractSqlInjector {
     @Override
     public List<AbstractMethod> getMethodList(Class<?> mapperClass) {
-        return Stream.of(new FindAll(),new Insert(), new Delete(), new DeleteByMap(), new DeleteById(), new DeleteBatchByIds(), new Update(), new UpdateById(), new SelectById(), new SelectBatchByIds(), new SelectByMap(), new SelectOne(), new SelectCount(), new SelectMaps(), new SelectMapsPage(), new SelectObjs(), new SelectList(), new SelectPage()).collect(Collectors.toList());
+        List<AbstractMethod> methodList = getMethodList(mapperClass);
+        methodList.add(new FindAll());
+        return methodList;
     }
 }

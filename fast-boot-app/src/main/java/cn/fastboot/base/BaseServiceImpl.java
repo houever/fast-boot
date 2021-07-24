@@ -24,7 +24,7 @@ public abstract class BaseServiceImpl<K extends BaseMpMapper<T>, T> extends Serv
 
     @Override
     public List<T> getAll(T t) {
-        return basempMapper.getAll(t);
+        return basempMapper.findAll();
     }
 
     @Override
