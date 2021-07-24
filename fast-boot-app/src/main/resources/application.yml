@@ -5,10 +5,10 @@ spring:
     username: ${RABBIT_MQ_USERNAME:guest}
     password: ${RABBIT_MQ_PASSWORD:guest}
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:10.1.70.78}:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&useSSL=false
+    url: jdbc:mysql://${MYSQL_HOST:1.15.4.73}:3306/mytest?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&useSSL=false
     username: root
     # Jasypt加密 可到common-utils中找到JasyptUtil加解密工具类生成加密结果 格式为ENC(加密结果)
-    password: 123456
+    password: farsight123!@#
     driver-class-name: com.mysql.jdbc.Driver
     initialSize: 1
     maxActive: 20
@@ -42,21 +42,6 @@ spring:
   #    throw-exception-if-no-handler-found: true
   resources:
     add-mappings: true
-  cloud:
-    consul:
-      enabled: true
-      host: ${CONSUL_HOST:10.1.70.78}
-      port: 8500
-      discovery:
-        service-name: ${spring.application.name} #设置 注册到 consul 的服务名称
-        register: true # 是否开启在 consul 中注册服务
-        enabled: true #启用 consul 服务发现
-        health-check-interval: 10s  # consul 健康检查频率
-        instance-id: ${spring.application.name}:${server.port}  # 配置注册到consul 服务的id
-        health-check-path: /actuator/health #定义 consul 健康检查路径
-        health-check-timeout: 10s #健康检查超时时间
-        prefer-ip-address: true
-        ip-address: ${LOCAL:10.1.70.38}
 # Mybatis-plus
 mybatis-plus:
   # 放在resource目录 classpath:/mapper/*Mapper.xml

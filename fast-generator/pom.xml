@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.fast</groupId>
-        <artifactId>fast-cloud</artifactId>
+        <artifactId>fast-boot</artifactId>
         <version>0.0.1.RELEASE</version>
     </parent>
     <groupId>cn.fast</groupId>
