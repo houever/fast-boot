@@ -25,20 +25,6 @@ import java.util.List;
 public class MybatisPlusConfig {
 
 	/**
-	 * @Description: TODO
-	 * @Param: 检查SQL是否合规
-	 * @Return: 
-	 * @Author: houqj
-	 * @Date: 2020/3/23 10:56
-	 * 非法sql拦截
-	 * https://github.com/baomidou/mybatis-plus/blob/3.0/mybatis-plus-extension/src/main/java/com/baomidou/mybatisplus/extension/plugins/IllegalSQLInterceptor.java
-	 */
-	@Bean
-	public IllegalSQLInterceptor illegalSQLInterceptor() {
-		return new IllegalSQLInterceptor();
-	}
-
-	/**
 	 * 分页插件
 	 *
 	 * @return PaginationInterceptor
